@@ -577,6 +577,13 @@ table tr td:last-child {
     background-color: #f8f8f8;
 }
 
+#write .CodeMirror pre {
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace !important;
+    font-size: 12px;
+    font-weight: 400;
+    background: #fff;
+}
+
 #write .md-footnote {
     background-color: #f8f8f8;
     color: #e96900;
@@ -601,8 +608,24 @@ table tr td:last-child {
     color: #22a2c9;
 }
 
+.cm-s-inner .cm-keyword {
+    color: #d73a49
+}
+
 .cm-s-inner .cm-string {
     color: #22a2c9;
+}
+
+.cm-s-inner .cm-def {
+    color: #005cc5;
+}
+
+.cm-s-inner .cm-builtin {
+    color: #833ab4;
+}
+
+.cm-s-inner .cm-comment {
+    color: #6a737d;
 }
 
 .md-task-list-item > input {
@@ -624,8 +647,14 @@ table tr td:last-child {
     }
 }
 
+/*
 .md-fences {
     background-color: #f8f8f8;
+}
+*/
+#write .md-fences {
+    background-color: #fff !important;
+    border-radius: 6px;
 }
 
 #write pre.md-meta-block {
